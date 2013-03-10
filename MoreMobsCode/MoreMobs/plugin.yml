@@ -1,0 +1,48 @@
+name: More Mobs
+version: 2.0
+description: Getting tired of vanilla mobs? Spice up your server with more mobs!
+author: abandenz
+author: Dibujaron
+author: Oblivius
+main: plugin.moremobs.MoreMobsCore
+commands:
+  moremobs:
+    description: Main command. Type in for more info.
+    aliases: [mm]
+permissions:
+  MoreMobs.Spawn.SkeletonWarriorDiamond:
+    description: Permission for spawning SkeleWarriorsinDiamond.
+    default: op
+  MoreMobs.Spawn.SkeletonWarriorGold:
+    description: Permission for spawning SkeleWarriorsinGold.
+    default: op
+  MoreMobs.Spawn.SkeletonWarriorIron:
+    description: Permission for spawning SkeleWarriorsinIron.
+    default: op
+  MoreMobs.Spawn.Foodfight:
+    description: Permission for spawning Foodfight.
+    default: op
+  MoreMobs.Spawn.Giant:
+    description: Permission for spawning giants.
+    default: op
+  MoreMobs.Spawn.Hellhound:
+    description: Permission for spawning hellhounds.
+    default: op
+  MoreMobs.Spawn.Lich:
+    description: Permission for spawning liches.
+    default: op
+  MoreMobs.Spawn.Wraith:
+    description: Permission for spawning wraiths.
+    default: op
+  MoreMobs.*:
+    description: Permission for everything in this plugin.
+    default: op
+    children:
+      MoreMobs.Spawn.SkeletonWarriorDiamond: true
+      MoreMobs.Spawn.SkeletonWarriorGold: true
+      MoreMobs.Spawn.SkeletonWarriorIron: true
+      MoreMobs.Spawn.Foodfight: true
+      MoreMobs.Spawn.Giant: true
+      MoreMobs.Spawn.Hellhound: true
+      MoreMobs.Spawn.Lich: true
+      MoreMobs.Spawn.Wraith: true
