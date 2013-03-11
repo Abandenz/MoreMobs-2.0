@@ -49,16 +49,16 @@ public class HellSkeleton {
 			bootsMeta.setColor(Color.fromRGB(218, 28, 28));
 			HSBoots.setItemMeta(bootsMeta);
 			HS.getEquipment().setChestplate(HSChest);
-			HS.getEquipment().setChestplate(HSLeg);
+			HS.getEquipment().setLeggings(HSLeg);
 			HS.getEquipment().setBoots(HSBoots);
 			HS.getEquipment().setChestplateDropChance(0.30F);
 			HS.getEquipment().setLeggingsDropChance(0.30F);
 			HS.getEquipment().setBootsDropChance(0.40F);
 			HS.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 2147483647, 1));
-			HS.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 2147483647, 1));
-			HS.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 2147483647, 1));
+			HS.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 2147483647, 2));
+			HS.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 2147483647, 4));
 			HS.addPotionEffect(new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 2147483647, 10));
-			HS.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 2147483647, 1));
+			HS.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 2147483647, 2));
 			HS.setFireTicks(2147483647);
 			i++;
 		}
