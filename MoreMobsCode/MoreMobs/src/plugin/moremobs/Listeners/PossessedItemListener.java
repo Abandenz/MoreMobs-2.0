@@ -16,46 +16,49 @@ import org.bukkit.inventory.ItemStack;
 import plugin.moremobs.MoreMobsCore;
 import plugin.moremobs.Mobs.PossessedItem;
 
-public class PossessedItemListener implements Listener{
-	
+public class PossessedItemListener implements Listener {
+
 	public MoreMobsCore plugin;
 	public PossessedItem MMPossessedItem;
-	
+
 	public PossessedItemListener(MoreMobsCore plugin) {
 		this.plugin = plugin;
 	}
-	
+
 	@SuppressWarnings("static-access")
-	@EventHandler(priority=EventPriority.HIGH)
+	@EventHandler(priority = EventPriority.HIGH)
 	public void onPlayerDropItem(PlayerDropItemEvent event) {
 		Random rand = new Random();
-        int possessionChance = rand.nextInt(5);
+		int possessionChance = rand.nextInt(5);
 		final ItemStack droppedStack = event.getItemDrop().getItemStack();
 		final Entity droppedStackEntity = event.getItemDrop();
 		final Location stackLoc = event.getItemDrop().getLocation();
-		if(possessionChance == 1) {
-			plugin.getServer().getScheduler().scheduleSyncDelayedTask(plugin, new Runnable() {
-	            public void run() {
-	            	droppedStackEntity.remove();
-	    			MMPossessedItem.spawnPossessedItem(stackLoc, 1, droppedStack);
-	            }
-	        }, 200L);
+		if (possessionChance == 1) {
+			plugin.getServer().getScheduler()
+					.scheduleSyncDelayedTask(plugin, new Runnable() {
+						public void run() {
+							droppedStackEntity.remove();
+							MMPossessedItem.spawnPossessedItem(stackLoc, 1,
+									droppedStack);
+						}
+					}, 200L);
 		}
 	}
-	
+
 	@SuppressWarnings("static-access")
-	@EventHandler(priority=EventPriority.HIGH)
+	@EventHandler(priority = EventPriority.HIGH)
 	public void onMobDeath(EntityDeathEvent event) {
 		Entity entity = event.getEntity();
-		if(entity instanceof Skeleton) {
+		if (entity instanceof Skeleton) {
 			Skeleton possessedItem = (Skeleton) entity;
-			if(MMPossessedItem.isPossessedItem(possessedItem)) {
+			if (MMPossessedItem.isPossessedItem(possessedItem)) {
 				try {
 					event.getDrops().clear();
-					if(entity.getLastDamageCause().getCause().equals(DamageCause.ENTITY_ATTACK)) {
+					if (entity.getLastDamageCause().getCause()
+							.equals(DamageCause.ENTITY_ATTACK)) {
 						event.setDroppedExp(8);
 					}
-				} catch(Exception ex) {
+				} catch (Exception ex) {
 					return;
 				}
 			}

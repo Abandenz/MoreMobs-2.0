@@ -29,10 +29,10 @@ import plugin.moremobs.Mobs.FoodFight;
 import plugin.moremobs.Mobs.Wraith;
 
 public class FoodFightListener implements Listener {
-	
+
 	public MoreMobsCore plugin;
 	public FoodFight MMFoodFight;
-	
+
 	public FoodFightListener(MoreMobsCore plugin) {
 		this.plugin = plugin;
 	}

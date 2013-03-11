@@ -28,10 +28,10 @@ import plugin.moremobs.MoreMobsCore;
 import plugin.moremobs.Mobs.*;
 
 public class PigChestListener implements Listener {
-	
+
 	public MoreMobsCore plugin;
 	public PigChest MMPigChest;
-	
+
 	public PigChestListener(MoreMobsCore plugin) {
 		this.plugin = plugin;
 	}

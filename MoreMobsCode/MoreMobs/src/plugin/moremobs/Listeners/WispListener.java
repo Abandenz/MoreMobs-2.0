@@ -28,22 +28,27 @@ public class WispListener implements Listener {
 	}
 
 	@EventHandler(priority = EventPriority.HIGH)
-	public void EntityTargetEvent (final Entity entity, final Entity target, final TargetReason reason) {
+	public void EntityTargetEvent(final Entity entity, final Entity target,
+			final TargetReason reason) {
 		if (entity instanceof Bat) {
-			 Bat wisp = (Bat) entity;
+			Bat wisp = (Bat) entity;
 			if (MMWisp.isWisp(wisp)) {
 				plugin.getServer().getScheduler()
 						.scheduleSyncDelayedTask(plugin, new Runnable() {
 							public void run() {
-								entity.getWorld().playEffect(entity.getLocation(),
+								entity.getWorld().playEffect(
+										entity.getLocation(),
 										Effect.MOBSPAWNER_FLAMES, 0);
-								entity.getWorld().playEffect(entity.getLocation(),
+								entity.getWorld().playEffect(
+										entity.getLocation(),
 										Effect.POTION_BREAK, 0);
-								entity.getWorld().playEffect(entity.getLocation(),
-										Effect.SMOKE, 0);
-								entity.getWorld().playEffect(entity.getLocation(),
+								entity.getWorld().playEffect(
+										entity.getLocation(), Effect.SMOKE, 0);
+								entity.getWorld().playEffect(
+										entity.getLocation(),
 										Effect.ENDER_SIGNAL, 0);
-								entity.getWorld().playEffect(entity.getLocation(),
+								entity.getWorld().playEffect(
+										entity.getLocation(),
 										Effect.POTION_BREAK, 1);
 							}
 						}, 20L);

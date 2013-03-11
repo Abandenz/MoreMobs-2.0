@@ -28,10 +28,10 @@ import plugin.moremobs.*;
 import plugin.moremobs.Mobs.*;
 
 public class SkeletonWarriorIronListener implements Listener {
-	
+
 	public MoreMobsCore plugin;
 	public SkeletonWarriorIron MMSkeletonWarriorIron;
-	
+
 	public SkeletonWarriorIronListener(MoreMobsCore plugin) {
 		this.plugin = plugin;
 	}
