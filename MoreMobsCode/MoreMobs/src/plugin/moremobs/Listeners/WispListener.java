@@ -1,19 +1,12 @@
 package plugin.moremobs.Listeners;
 
-import java.util.Iterator;
-import java.util.Random;
-
 import org.bukkit.Effect;
-import org.bukkit.Location;
-import org.bukkit.entity.*;
+import org.bukkit.entity.Bat;
+import org.bukkit.entity.Entity;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason;
 import org.bukkit.event.entity.EntityTargetEvent.TargetReason;
-import org.bukkit.event.entity.EntityTeleportEvent;
-import org.bukkit.event.player.PlayerDropItemEvent;
-import org.bukkit.inventory.ItemStack;
 
 import plugin.moremobs.MoreMobsCore;
 import plugin.moremobs.Mobs.Wisp;

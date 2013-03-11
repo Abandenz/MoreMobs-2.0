@@ -7,17 +7,16 @@ import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Skeleton;
-import org.bukkit.entity.Wolf;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
-import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.event.entity.EntityDamageEvent.DamageCause;
+import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 
-import plugin.moremobs.*;
-import plugin.moremobs.Mobs.*;
+import plugin.moremobs.MoreMobsCore;
+import plugin.moremobs.Mobs.HellSkeleton;
 
 public class HellSkeletonListener implements Listener {
 
