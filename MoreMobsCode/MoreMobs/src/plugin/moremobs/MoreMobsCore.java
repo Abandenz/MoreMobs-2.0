@@ -29,12 +29,14 @@ public class MoreMobsCore extends JavaPlugin {
 	public SkeletonWarriorGold MMSkeletonWarriorGold;
 	public SkeletonWarriorIron MMSkeletonWarriorIron;
 	public HellSkeleton MMHellSkeleton;
+	public PigChest MMPigChest;
 	public Wisp MMWisp;
 	public FoodFight MMFoodFight;
 	private final SkeletonWarriorIronListener skeletonwarrioriron;
 	private final SkeletonWarriorGoldListener skeletonwarriorgold;
 	private final SkeletonWarriorDiamondListener skeletonwarriordiamond;
 	private final HellSkeletonListener HellSkeleton;
+	private final PigChestListener PigChest;
 	private final WispListener Wisp;
 	private final HellhoundListener hellhound;
 	private final LichListener lich;
@@ -47,6 +49,7 @@ public class MoreMobsCore extends JavaPlugin {
 		this.foodfight = new FoodFightListener(this);
 		this.hellhound = new HellhoundListener(this);
 		this.lich = new LichListener(this);
+		this.PigChest = new PigChestListener(this);
 		this.possessedItem = new PossessedItemListener(this);
 		this.wraith = new WraithListener(this);
 		this.skeletonwarriordiamond = new SkeletonWarriorDiamondListener(this);
@@ -63,6 +66,7 @@ public class MoreMobsCore extends JavaPlugin {
 		manager.registerEvents(this.foodfight, this);
 		manager.registerEvents(this.hellhound, this);
 		manager.registerEvents(this.Wisp, this);
+		manager.registerEvents(this.PigChest, this);
 		manager.registerEvents(this.HellSkeleton, this);
 		manager.registerEvents(this.skeletonwarriordiamond, this);
 		manager.registerEvents(this.skeletonwarrioriron, this);
@@ -70,6 +74,7 @@ public class MoreMobsCore extends JavaPlugin {
 		manager.registerEvents(this.lich, this);
 		manager.registerEvents(this.possessedItem, this);
 		manager.registerEvents(this.wraith, this);
+		
 	}
 	
 	
@@ -100,7 +105,15 @@ public class MoreMobsCore extends JavaPlugin {
 								amount = 100;
 								player.sendMessage(ChatColor.GOLD + "[More Mobs]" + ChatColor.RED + " 100 is the max!");
 							}
-							if(args[1].equalsIgnoreCase("HellSkele")) {
+							if(args[1].equalsIgnoreCase("PigChest")) {
+								if(player.isOp() || player.hasPermission("MoreMobs.Spawn.Giant")) {
+									MMPigChest.spawnPigChest(spawnLoc, amount);
+									player.sendMessage(ChatColor.GOLD + "[More Mobs]" + ChatColor.GREEN + " PigChest(" + amount + ") spawned!");
+									player.getWorld().playSound(player.getLocation(), Sound.WITHER_SPAWN, 1.0F, 1.0F);
+								} else {
+									NoPerms(player);
+								}
+						}else if(args[1].equalsIgnoreCase("HellSkele")) {
 								if(player.isOp() || player.hasPermission("MoreMobs.Spawn.Giant")) {
 									MMHellSkeleton.spawnHellSkeleton(spawnLoc, amount);
 									player.sendMessage(ChatColor.GOLD + "[More Mobs]" + ChatColor.GREEN + " HellSkele(" + amount + ") spawned!");
