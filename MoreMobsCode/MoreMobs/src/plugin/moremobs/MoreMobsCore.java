@@ -28,11 +28,13 @@ public class MoreMobsCore extends JavaPlugin {
 	public SkeletonWarriorDiamond MMSkeletonWarriorDiamond;
 	public SkeletonWarriorGold MMSkeletonWarriorGold;
 	public SkeletonWarriorIron MMSkeletonWarriorIron;
+	public HellSkeleton MMHellSkeleton;
 	public Wisp MMWisp;
 	public FoodFight MMFoodFight;
 	private final SkeletonWarriorIronListener skeletonwarrioriron;
 	private final SkeletonWarriorGoldListener skeletonwarriorgold;
 	private final SkeletonWarriorDiamondListener skeletonwarriordiamond;
+	private final HellSkeletonListener HellSkeleton;
 	private final WispListener Wisp;
 	private final HellhoundListener hellhound;
 	private final LichListener lich;
@@ -49,6 +51,7 @@ public class MoreMobsCore extends JavaPlugin {
 		this.wraith = new WraithListener(this);
 		this.skeletonwarriordiamond = new SkeletonWarriorDiamondListener(this);
 		this.Wisp = new WispListener(this);
+		this.HellSkeleton = new HellSkeletonListener(this);
 		this.skeletonwarrioriron = new SkeletonWarriorIronListener(this);
 		this.skeletonwarriorgold = new SkeletonWarriorGoldListener(this);
 	}
@@ -60,6 +63,7 @@ public class MoreMobsCore extends JavaPlugin {
 		manager.registerEvents(this.foodfight, this);
 		manager.registerEvents(this.hellhound, this);
 		manager.registerEvents(this.Wisp, this);
+		manager.registerEvents(this.HellSkeleton, this);
 		manager.registerEvents(this.skeletonwarriordiamond, this);
 		manager.registerEvents(this.skeletonwarrioriron, this);
 		manager.registerEvents(this.skeletonwarriorgold, this);
@@ -96,7 +100,15 @@ public class MoreMobsCore extends JavaPlugin {
 								amount = 100;
 								player.sendMessage(ChatColor.GOLD + "[More Mobs]" + ChatColor.RED + " 100 is the max!");
 							}
-							if(args[1].equalsIgnoreCase("wisp")) {
+							if(args[1].equalsIgnoreCase("HellSkele")) {
+								if(player.isOp() || player.hasPermission("MoreMobs.Spawn.Giant")) {
+									MMHellSkeleton.spawnHellSkeleton(spawnLoc, amount);
+									player.sendMessage(ChatColor.GOLD + "[More Mobs]" + ChatColor.GREEN + " HellSkele(" + amount + ") spawned!");
+									player.getWorld().playSound(player.getLocation(), Sound.WITHER_SPAWN, 1.0F, 1.0F);
+								} else {
+									NoPerms(player);
+								}
+						}else if(args[1].equalsIgnoreCase("wisp")) {
 								if(player.isOp() || player.hasPermission("MoreMobs.Spawn.Giant")) {
 									MMWisp.spawnWisp(spawnLoc, amount);
 									player.sendMessage(ChatColor.GOLD + "[More Mobs]" + ChatColor.GREEN + " Wisp(" + amount + ") spawned!");

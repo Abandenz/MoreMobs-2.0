@@ -33,9 +33,9 @@ public class FoodFight {
 			FoodFight.getEquipment().setChestplate(chestplate);
 			FoodFight.getEquipment().setHelmet(new ItemStack(Material.MELON_BLOCK, 1));
 			FoodFight.getEquipment().setItemInHand(new ItemStack(Material.PORK, 1));
-			FoodFight.getEquipment().setHelmetDropChance(0.0F);
-			FoodFight.getEquipment().setChestplateDropChance(5.0F);
-			FoodFight.getEquipment().setItemInHandDropChance(50.0F);
+			FoodFight.getEquipment().setHelmetDropChance(1.0F);
+			FoodFight.getEquipment().setChestplateDropChance(0.20F);
+			FoodFight.getEquipment().setItemInHandDropChance(0.80F);
 			FoodFight.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 2147483647, 1));
 			FoodFight.addPotionEffect(new PotionEffect(PotionEffectType.INVISIBILITY, 2147483647, 10));
 			FoodFight.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 2147483647, 1));
