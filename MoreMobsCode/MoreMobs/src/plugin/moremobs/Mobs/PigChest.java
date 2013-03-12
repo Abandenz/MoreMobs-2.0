@@ -1,6 +1,7 @@
 package plugin.moremobs.Mobs;
 
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.LivingEntity;
@@ -26,6 +27,8 @@ public class PigChest {
 		while (i < amount) {
 			LivingEntity pig = (LivingEntity) loc.getWorld().spawnEntity(loc,
 					EntityType.PIG);
+			pig.getEquipment().setChestplate(
+					new ItemStack(Material.LEATHER_CHESTPLATE, 1));
 			Entity minecart = (Entity) loc.getWorld().spawn(loc,
 					StorageMinecart.class);
 			pig.setPassenger(minecart);
