@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="craftbukkit-1.5-R0.1-20130316.233353-19">
+    <CLASSES>
+      <root url="jar://F:/PluginDEV/craftbukkit-1.5-R0.1-20130316.233353-19.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="http://jd.bukkit.org/dev/apidocs/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://F:/PluginDEV/craftbukkit-1.5-R0.1-20130316.233353-19.jar!/" />
+    </SOURCES>
+  </library>
+</component>
