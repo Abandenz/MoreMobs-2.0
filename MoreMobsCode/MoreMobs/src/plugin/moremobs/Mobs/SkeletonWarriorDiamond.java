@@ -10,7 +10,7 @@ import org.bukkit.potion.PotionEffectType;
 
 public class SkeletonWarriorDiamond {
 
-    public static boolean isSkeletonWarriorDiamond(
+    public static boolean isSkeletonWarriorDiamond (
             SkeletonWarriorDiamond MMSkeletonWarriorDiamond) {
         if (MMSkeletonWarriorDiamond instanceof Skeleton) {
             Skeleton SkeletonWarriorDiamond = (Skeleton) MMSkeletonWarriorDiamond;
@@ -22,7 +22,7 @@ public class SkeletonWarriorDiamond {
         return false;
     }
 
-    public static void spawnSkeletonWarriorDiamond(Location loc, int amount) {
+    public static void spawnSkeletonWarriorDiamond (Location loc, int amount) {
         int i = 0;
         while (i < amount) {
             Skeleton SkeletonWarriorIron = (Skeleton) loc.getWorld()

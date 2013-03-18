@@ -22,13 +22,13 @@ public class HellhoundListener implements Listener {
     public MoreMobsCore plugin;
     public Hellhound MMHellhound;
 
-    public HellhoundListener(MoreMobsCore plugin) {
+    public HellhoundListener (MoreMobsCore plugin) {
         this.plugin = plugin;
     }
 
     @SuppressWarnings("static-access")
     @EventHandler(priority = EventPriority.HIGH, ignoreCancelled = true)
-    public void onPlayerInteract(PlayerInteractEntityEvent event) {
+    public void onPlayerInteract (PlayerInteractEntityEvent event) {
         Entity interactedEntity = event.getRightClicked();
         if (interactedEntity instanceof Wolf) {
             Wolf hound = (Wolf) interactedEntity;
@@ -40,7 +40,7 @@ public class HellhoundListener implements Listener {
 
     @SuppressWarnings("static-access")
     @EventHandler(priority = EventPriority.HIGH)
-    public void onMobDamage(EntityDamageByEntityEvent event) {
+    public void onMobDamage (EntityDamageByEntityEvent event) {
         Entity entity = event.getEntity();
         Entity damager = event.getDamager();
         if (entity instanceof Player) {
@@ -56,7 +56,7 @@ public class HellhoundListener implements Listener {
 
     @SuppressWarnings("static-access")
     @EventHandler(priority = EventPriority.HIGH)
-    public void onMobDeath(EntityDeathEvent event) {
+    public void onMobDeath (EntityDeathEvent event) {
         Entity entity = event.getEntity();
         World world = event.getEntity().getWorld();
         if (entity instanceof Wolf) {
@@ -67,8 +67,7 @@ public class HellhoundListener implements Listener {
                     world.playSound(houndLoc, Sound.GHAST_FIREBALL, 1.0F, 1.0F);
                     world.playEffect(houndLoc, Effect.MOBSPAWNER_FLAMES, 1);
                     event.getDrops().clear();
-                    if (entity.getLastDamageCause().getCause()
-                            .equals(DamageCause.ENTITY_ATTACK)) {
+                    if (entity.getLastDamageCause().getCause().equals(DamageCause.ENTITY_ATTACK)) {
                         event.setDroppedExp(15);
                     }
                 } catch (Exception ex) {

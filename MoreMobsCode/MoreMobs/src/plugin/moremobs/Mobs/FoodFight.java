@@ -12,18 +12,18 @@ import org.bukkit.potion.PotionEffectType;
 
 public class FoodFight {
 
-    public static boolean isFoodFight(FoodFight MMFoodFight) {
+    public static boolean isFoodFight (FoodFight MMFoodFight) {
         if (MMFoodFight instanceof Zombie) {
             Zombie FoodFight = (Zombie) MMFoodFight;
             if (FoodFight.getEquipment().getChestplate()
-                    .equals(new ItemStack(299, 1, (short) -98789))) {
+                    .equals(new ItemStack(299, 1, (short) - 98789))) {
                 return true;
             }
         }
         return false;
     }
 
-    public static void spawnFoodFight(Location loc, int amount) {
+    public static void spawnFoodFight (Location loc, int amount) {
         int i = 0;
         while (i < amount) {
             Zombie FoodFight = (Zombie) loc.getWorld().spawnEntity(loc,
@@ -36,7 +36,7 @@ public class FoodFight {
             FFLeg.setItemMeta(legMeta);
             LeatherArmorMeta chestMeta;
             ItemStack FFChest = new ItemStack(Material.LEATHER_CHESTPLATE, 1,
-                    (short) -98789);
+                    (short) - 98789);
             chestMeta = (LeatherArmorMeta) FFChest.getItemMeta();
             chestMeta.setColor(Color.fromRGB(48, 206, 0));
             FFChest.setItemMeta(chestMeta);

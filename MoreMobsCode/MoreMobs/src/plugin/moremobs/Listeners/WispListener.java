@@ -15,19 +15,19 @@ public class WispListener implements Listener {
     public MoreMobsCore plugin;
     public Wisp MMWisp;
 
-    public WispListener(MoreMobsCore plugin) {
+    public WispListener (MoreMobsCore plugin) {
         this.plugin = plugin;
     }
 
     @EventHandler(priority = EventPriority.HIGH)
-    public void EntityTargetEvent(final Entity entity, final Entity target,
-                                  final TargetReason reason) {
+    public void EntityTargetEvent (final Entity entity, final Entity target,
+                                   final TargetReason reason) {
         if (entity instanceof Bat) {
             Bat wisp = (Bat) entity;
             if (MMWisp.isWisp(wisp)) {
                 plugin.getServer().getScheduler()
                         .scheduleSyncDelayedTask(plugin, new Runnable() {
-                            public void run() {
+                            public void run () {
                                 entity.getWorld().playEffect(
                                         entity.getLocation(),
                                         Effect.MOBSPAWNER_FLAMES, 0);

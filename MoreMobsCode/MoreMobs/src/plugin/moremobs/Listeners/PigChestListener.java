@@ -9,7 +9,7 @@ public class PigChestListener implements Listener {
     public MoreMobsCore plugin;
     public PigChest MMPigChest;
 
-    public PigChestListener(MoreMobsCore plugin) {
+    public PigChestListener (MoreMobsCore plugin) {
         this.plugin = plugin;
     }
 }

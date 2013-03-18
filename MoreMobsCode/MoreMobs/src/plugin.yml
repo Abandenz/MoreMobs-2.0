@@ -1,0 +1,43 @@
+name: More Mobs
+version: 2.0
+description: Getting tired of regular ol' mobs? Then spice up your server with more mobs!
+authors: [Dibujaron, Oblivius, Abandenz]
+main: plugin.moremobs.MoreMobsCore
+commands:
+  moremobs:
+    description: Main command. Type in for more info.
+    aliases: [mm]
+permissions:
+  MoreMobs.List:
+    description: Permission for (main command/list of subcommands).
+    default: op
+  MoreMobs.Spawn.List:
+    description: Permission for spawning giants.
+    default: op
+  MoreMobs.Spawn.Giant:
+    description: Permission for spawning giants.
+    default: op
+  MoreMobs.Spawn.Hellhound:
+    description: Permission for spawning hellhounds.
+    default: op
+  MoreMobs.Spawn.Lich:
+    description: Permission for spawning liches.
+    default: op
+  MoreMobs.Spawn.Wraith:
+    description: Permission for spawning wraiths.
+    default: op
+  MoreMobs.Spawn.*:
+    description: Permission for everything in the spawn command.
+    default: op
+    children:
+      MoreMobs.Spawn.List: true
+      MoreMobs.Spawn.Giant: true
+      MoreMobs.Spawn.Hellhound: true
+      MoreMobs.Spawn.Lich: true
+      MoreMobs.Spawn.Wraith: true
+  MoreMobs.*:
+    description: Permission for everything in this plugin.
+    default: op
+    children:
+      MoreMobs.List: true
+      MoreMobs.Spawn.*: true

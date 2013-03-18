@@ -9,7 +9,7 @@ public class FoodFightListener implements Listener {
     public MoreMobsCore plugin;
     public FoodFight MMFoodFight;
 
-    public FoodFightListener(MoreMobsCore plugin) {
+    public FoodFightListener (MoreMobsCore plugin) {
         this.plugin = plugin;
     }
 }

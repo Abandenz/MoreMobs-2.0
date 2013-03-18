@@ -13,11 +13,11 @@ import org.bukkit.potion.PotionEffectType;
 
 public class HellSkeleton {
 
-    public static boolean isHellSkeleton(Entity entity) {
+    public static boolean isHellSkeleton (Entity entity) {
         if (entity instanceof Skeleton) {
             LeatherArmorMeta chestMeta;
             ItemStack HSC = new ItemStack(Material.LEATHER_CHESTPLATE, 1,
-                    (short) -98789);
+                    (short) - 98789);
             chestMeta = (LeatherArmorMeta) HSC.getItemMeta();
             chestMeta.setColor(Color.fromRGB(218, 28, 28));
             HSC.setItemMeta(chestMeta);
@@ -25,14 +25,14 @@ public class HellSkeleton {
             if (HS.getEquipment()
                     .getChestplate()
                     .equals(new ItemStack(Material.LEATHER_CHESTPLATE, 1,
-                            (short) -98789))) {
+                            (short) - 98789))) {
                 return true;
             }
         }
         return false;
     }
 
-    public static void spawnHellSkeleton(Location loc, int amount) {
+    public static void spawnHellSkeleton (Location loc, int amount) {
         int i = 0;
         while (i < amount) {
             Skeleton HS = (Skeleton) loc.getWorld().spawnEntity(loc,
@@ -44,7 +44,7 @@ public class HellSkeleton {
             HSLeg.setItemMeta(legMeta);
             LeatherArmorMeta chestMeta;
             ItemStack HSChest = new ItemStack(Material.LEATHER_CHESTPLATE, 1,
-                    (short) -98789);
+                    (short) - 98789);
             chestMeta = (LeatherArmorMeta) HSChest.getItemMeta();
             chestMeta.setColor(Color.fromRGB(218, 28, 28));
             HSChest.setItemMeta(chestMeta);

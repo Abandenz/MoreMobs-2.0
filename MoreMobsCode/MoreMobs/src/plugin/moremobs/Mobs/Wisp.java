@@ -10,7 +10,7 @@ import org.bukkit.entity.EntityType;
 
 public class Wisp {
 
-    public static boolean isWisp(Entity entity) {
+    public static boolean isWisp (Entity entity) {
         if (entity instanceof Bat) {
             Bat Wisp = (Bat) entity;
             return true;
@@ -20,7 +20,7 @@ public class Wisp {
 
     World getWorld = Bukkit.getServer().getWorld("World1");
 
-    public static void spawnWisp(Location loc, int amount) {
+    public static void spawnWisp (Location loc, int amount) {
         int i = 0;
         while (i < amount) {
             Wisp Wisp = (Wisp) loc.getWorld().spawnEntity(loc, EntityType.BAT);

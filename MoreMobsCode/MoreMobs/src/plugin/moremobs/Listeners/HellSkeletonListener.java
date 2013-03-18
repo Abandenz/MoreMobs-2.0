@@ -14,14 +14,14 @@ public class HellSkeletonListener implements Listener {
     public MoreMobsCore plugin;
     public HellSkeleton MMHellSkeleton;
 
-    public HellSkeletonListener(MoreMobsCore plugin) {
+    public HellSkeletonListener (MoreMobsCore plugin) {
         this.plugin = plugin;
     }
 
 
     @SuppressWarnings("static-access")
     @EventHandler(priority = EventPriority.HIGH)
-    public void EntityShootBowEvent(EntityShootBowEvent event) {
+    public void EntityShootBowEvent (EntityShootBowEvent event) {
         Entity entity = event.getEntity();
         if (entity instanceof Skeleton) {
             Skeleton HS = (Skeleton) entity;

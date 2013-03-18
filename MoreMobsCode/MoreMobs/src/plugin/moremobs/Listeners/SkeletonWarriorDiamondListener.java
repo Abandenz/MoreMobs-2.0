@@ -9,7 +9,7 @@ public class SkeletonWarriorDiamondListener implements Listener {
     public MoreMobsCore plugin;
     public SkeletonWarriorDiamond MMSkeletonWarriorDiamond;
 
-    public SkeletonWarriorDiamondListener(MoreMobsCore plugin) {
+    public SkeletonWarriorDiamondListener (MoreMobsCore plugin) {
         this.plugin = plugin;
     }
 }
