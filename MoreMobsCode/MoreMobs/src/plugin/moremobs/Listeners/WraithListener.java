@@ -79,6 +79,7 @@ public class WraithListener implements Listener {
     @SuppressWarnings("static-access")
     @EventHandler(priority = EventPriority.HIGH)
     public void onPlayerDamage (EntityDamageByEntityEvent event) {
+        string netherw = plugin.;
         Random rand = new Random();
         int i = rand.nextInt(200);
         int j = rand.nextInt(200);
@@ -91,8 +92,8 @@ public class WraithListener implements Listener {
                 Player player = (Player) entity;
                 Zombie wraith = (Zombie) damager;
                 if (MMWraith.isWraith(wraith)) {
-                    Location location = new Location(plugin.getServer().getWorld("world_nether"), i + 0 - j + 0.5, 63, k + 0 - l + 0.5);
-                    location = location.getWorld().getHighestBlockAt(location).getLocation();
+                    Location location = new Location(plugin.getServer().getWorld(), i + 0 - j + 0.5, 63, k + 0 - l + 0.5);
+                    location = location.getWorld().getBlockAt(location).getLocation();
                     Location locUnderLoc = location.subtract(0.0D, 1.0D, 0.0D).getBlock().getLocation();
                     player.teleport(location);
                     if (locUnderLoc.getBlock().getType().equals(Material.LAVA)) {

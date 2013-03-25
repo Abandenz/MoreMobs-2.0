@@ -17,11 +17,13 @@ public class MoreMobsCore extends JavaPlugin {
     public static MoreMobsCore plugin;
     public Hellhound MMHellhound;
     public HellSkeleton MMHellSkeleton;
+    public FoodFight MMFoodFight;
     public PigChest MMPigChest;
     public Lich MMLich;
     public PossessedItem MMPossessedItem;
     public Wraith MMWraith;
     public ZombieGiant MMGiant;
+    private final FoodFightListener foodfight;
     private final HellSkeletonListener hellskele;
     private final PigChestListener pigchest;
     private final HellhoundListener hellhound;
@@ -32,6 +34,7 @@ public class MoreMobsCore extends JavaPlugin {
     public static Integer maxSpawnLimit = Integer.valueOf(10);
 
     public MoreMobsCore () {
+        this.foodfight = new FoodFightListener(this);
         this.hellskele = new HellSkeletonListener(this);
         this.pigchest = new PigChestListener(this);
         this.hellhound = new HellhoundListener(this);
@@ -44,6 +47,7 @@ public class MoreMobsCore extends JavaPlugin {
     public void onEnable () {
         loadConfig();
         PluginManager manager = getServer().getPluginManager();
+        manager.registerEvents(this.foodfight, this);
         manager.registerEvents(this.hellskele, this);
         manager.registerEvents(this.pigchest, this);
         manager.registerEvents(this.hellhound, this);

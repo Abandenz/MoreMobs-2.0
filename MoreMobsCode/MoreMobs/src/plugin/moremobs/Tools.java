@@ -11,7 +11,6 @@ public class Tools {
 
     public static Location playerTarget (Player player) {
         Location spawnLoc = player.getTargetBlock(null, 100).getLocation();
-        spawnLoc = spawnLoc.getWorld().getHighestBlockAt(spawnLoc).getLocation();
         spawnLoc = spawnLoc.add(0.0D, 1.0D, 0.0D);
         return spawnLoc;
     }
@@ -56,16 +55,26 @@ public class Tools {
         player.sendMessage(ChatColor.GOLD + "Hellhound:" + ChatColor.GRAY + ChatColor.ITALIC + " Hellish demonic hounds hungering over the thought of human flesh.");
         player.sendMessage(ChatColor.GOLD + "Lich:" + ChatColor.GRAY + ChatColor.ITALIC + " Undead necromancers who achieved a way of immortality.");
         player.sendMessage(ChatColor.GOLD + "Wraith:" + ChatColor.GRAY + ChatColor.ITALIC + " Roaming lost spirits in search of souls of players.");
-        player.sendMessage(ChatColor.GOLD + "HellSkeleton:" + ChatColor.GRAY + ChatColor.ITALIC + " A skeleton straight from hell.");
+        player.sendMessage(ChatColor.DARK_RED + "PigChest:" + ChatColor.GRAY + ChatColor.ITALIC + " Its a pig with a chest!");
+
     }
 
     public static void helpList (Player player) {
         player.sendMessage(ChatColor.RED + "-----[" + ChatColor.GOLD + "More Mobs" + ChatColor.RED + "]-----");
         player.sendMessage(ChatColor.GOLD + "Type /moremobs <Subcommand>.");
         player.sendMessage(ChatColor.GOLD + "Subcommands:");
-        player.sendMessage(ChatColor.GOLD + "Help:" + ChatColor.GRAY + ChatColor.ITALIC + " How to use the command.");
-        player.sendMessage(ChatColor.GOLD + "Spawn:" + ChatColor.GRAY + ChatColor.ITALIC + " The command for spawning more mobs mobs.");
+        player.sendMessage(ChatColor.GOLD + "DevList:" + ChatColor.GRAY + ChatColor.ITALIC + " A list of all commands relating to things in development.");
+        player.sendMessage(ChatColor.GOLD + "Spawn:" + ChatColor.GRAY + ChatColor.ITALIC + " A list of all of the main moremobs mobs.");
     }
+
+    public static void devList (Player player) {
+        player.sendMessage(ChatColor.RED + "-----[" + ChatColor.GOLD + "More Mobs Dev Commands" + ChatColor.RED + "]-----");
+        player.sendMessage(ChatColor.DARK_RED + "SkeletonWarriorDiamond:" + ChatColor.GRAY + ChatColor.ITALIC + " Skele in diamond WIP.");
+        player.sendMessage(ChatColor.DARK_RED + "FoodFight:" + ChatColor.GRAY + ChatColor.ITALIC + " Tts a really fast tiny mob WIP.");
+        player.sendMessage(ChatColor.DARK_RED + "HellSkeleton:" + ChatColor.GRAY + ChatColor.ITALIC + " OP as hell skeleton ;D WIP.");
+
+    }
+
 
     public static void notAPlayer (CommandSender sender) {
         sender.sendMessage(ChatColor.GOLD + "[More Mobs]" + ChatColor.RED + " You are not a player! You must be in-game to execute this command.");

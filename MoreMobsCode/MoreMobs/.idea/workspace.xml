@@ -49,13 +49,16 @@
     </list>
     <ignored path="MoreMobs.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/MoreMobsCore.java" changelist="554e7ec5-5bfa-4b29-9800-498e71995b9a" time="1363588644705" ignored="false" />
-    <file path="/Dummy.txt" changelist="554e7ec5-5bfa-4b29-9800-498e71995b9a" time="1363587786518" ignored="false" />
-    <file path="/fragment.java" changelist="554e7ec5-5bfa-4b29-9800-498e71995b9a" time="1363568617580" ignored="false" />
+    <file path="/MoreMobsCore.java" changelist="554e7ec5-5bfa-4b29-9800-498e71995b9a" time="1364166708349" ignored="false" />
+    <file path="/Dummy.txt" changelist="554e7ec5-5bfa-4b29-9800-498e71995b9a" time="1364177963413" ignored="false" />
+    <file path="/fragment.java" changelist="554e7ec5-5bfa-4b29-9800-498e71995b9a" time="1364071378913" ignored="false" />
     <file path="/a.java" changelist="554e7ec5-5bfa-4b29-9800-498e71995b9a" time="1363569713700" ignored="false" />
-    <file path="$PROJECT_DIR$/src/plugin/moremobs/Commands/ConsoleCommands.java" changelist="554e7ec5-5bfa-4b29-9800-498e71995b9a" time="1363569777516" ignored="false" />
-    <file path="$PROJECT_DIR$/src/plugin/moremobs/Commands/CommandHandler.java" changelist="554e7ec5-5bfa-4b29-9800-498e71995b9a" time="1363569777517" ignored="false" />
-    <file path="/CMDSpawn.java" changelist="554e7ec5-5bfa-4b29-9800-498e71995b9a" time="1363589115003" ignored="false" />
+    <file path="/CMDSpawn.java" changelist="554e7ec5-5bfa-4b29-9800-498e71995b9a" time="1364071760136" ignored="false" />
+    <file path="/Tools.java" changelist="554e7ec5-5bfa-4b29-9800-498e71995b9a" time="1364071877507" ignored="false" />
+    <file path="/CommandHandler.java" changelist="554e7ec5-5bfa-4b29-9800-498e71995b9a" time="1364010672283" ignored="false" />
+    <file path="/PigChestListener.java" changelist="554e7ec5-5bfa-4b29-9800-498e71995b9a" time="1364117608979" ignored="false" />
+    <file path="/PigChest.java" changelist="554e7ec5-5bfa-4b29-9800-498e71995b9a" time="1364116222239" ignored="false" />
+    <file path="/WraithListener.java" changelist="554e7ec5-5bfa-4b29-9800-498e71995b9a" time="1364119383701" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +73,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -104,7 +108,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -117,16 +120,43 @@
       <file leaf-file-name="MoreMobsCore.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/MoreMobsCore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="50" selection-start="1722" selection-end="1722" vertical-scroll-proportion="0.0">
+            <state line="68" column="125" selection-start="2631" selection-end="2631" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PigChest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Mobs/PigChest.java">
+      <file leaf-file-name="Tools.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Tools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="25" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
+            <state line="19" column="0" selection-start="540" selection-end="586" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMDSpawn.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Commands/CMDSpawn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="124" selection-start="2371" selection-end="2371" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PigChestListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Listeners/PigChestListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="17" selection-start="1201" selection-end="1270" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WraithListener.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Listeners/WraithListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="87" column="117" selection-start="3165" selection-end="3165" vertical-scroll-proportion="0.4465291">
               <folding />
             </state>
           </provider>
@@ -135,25 +165,43 @@
       <file leaf-file-name="LichListener.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Listeners/LichListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="11" selection-start="2706" selection-end="2706" vertical-scroll-proportion="0.0">
+            <state line="93" column="70" selection-start="4491" selection-end="4491" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WraithListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Listeners/WraithListener.java">
+      <file leaf-file-name="PigChest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Mobs/PigChest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="22" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.0">
+            <state line="28" column="21" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FoodFightListener.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Listeners/FoodFightListener.java">
+      <file leaf-file-name="HellSkeletonListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Listeners/HellSkeletonListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="74" selection-start="358" selection-end="358" vertical-scroll-proportion="0.4493392">
+            <state line="7" column="109" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HellSkeleton.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Mobs/HellSkeleton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="139" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsoleCommands.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Commands/ConsoleCommands.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -178,17 +226,22 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/plugin/moremobs/Mobs/PossessedItem.java" />
-        <option value="$PROJECT_DIR$/src/plugin/moremobs/MoreMobsCore.java" />
-        <option value="$PROJECT_DIR$/src/plugin/moremobs/Tools.java" />
+        <option value="$PROJECT_DIR$/src/plugin/moremobs/Commands/CommandHandler.java" />
+        <option value="$PROJECT_DIR$/src/plugin/moremobs/Listeners/HellSkeletonListener.java" />
         <option value="$PROJECT_DIR$/src/plugin/moremobs/Commands/CMDSpawn.java" />
+        <option value="$PROJECT_DIR$/src/plugin/moremobs/Tools.java" />
+        <option value="$PROJECT_DIR$/src/plugin/moremobs/Mobs/PigChest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/moremobs/MoreMobsCore.java" />
+        <option value="$PROJECT_DIR$/src/plugin/moremobs/Listeners/PigChestListener.java" />
+        <option value="$PROJECT_DIR$/src/plugin/moremobs/Listeners/WraithListener.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="978" />
-    <option name="height" value="784" />
+    <option name="width" value="1394" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -216,7 +269,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -285,12 +337,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Mobs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MoreMobs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MoreMobs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="moremobs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Listeners" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -300,7 +375,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="options.lastSelected" value="preferences.sourceCode" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/plugin.yml" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -308,8 +383,8 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -345,19 +420,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -384,6 +446,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -456,8 +531,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="978" height="784" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1394" height="916" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -467,21 +542,21 @@
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23285486" sideWeight="0.51419216" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23320158" sideWeight="0.5495495" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32750398" sideWeight="0.49017468" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23285486" sideWeight="0.47816592" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23320158" sideWeight="0.4451952" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32674572" sideWeight="0.48123124" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -546,109 +621,104 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/MoreMobsCore.java">
+    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Spawners/Spawn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="53" selection-start="2576" selection-end="2576" vertical-scroll-proportion="0.0">
+        <state line="5" column="12" selection-start="59" selection-end="59" vertical-scroll-proportion="0.19675925" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Commands/CommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="21" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="34" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Mobs/Hellhound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="323" selection-end="323" vertical-scroll-proportion="0.12757973" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Listeners/FoodFightListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="18" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Commands/ConsoleCommands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Mobs/Lich.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="18" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0" />
+        <state line="18" column="0" selection-start="527" selection-end="1131" vertical-scroll-proportion="0.19136961" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Mobs/Hellhound.java">
+    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Listeners/LichListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Mobs/PossessedItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Mobs/Wraith.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Spawners/Spawn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="59" selection-end="59" vertical-scroll-proportion="0.18722467">
+        <state line="93" column="70" selection-start="4491" selection-end="4491" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Tools.java">
+    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Listeners/HellSkeletonListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="118" selection-start="3213" selection-end="3213" vertical-scroll-proportion="2.3900228">
-          <folding>
-            <element signature="e#523#559#0" expanded="true" />
-          </folding>
+        <state line="7" column="109" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Commands/CMDSpawn.java">
+    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Mobs/HellSkeleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="60" selection-start="2563" selection-end="2563" vertical-scroll-proportion="0.4988662">
-          <folding>
-            <element signature="e#658#692#0" expanded="true" />
-            <element signature="e#778#812#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/MoreMobsCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="50" selection-start="1722" selection-end="1722" vertical-scroll-proportion="0.0">
+        <state line="41" column="139" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Mobs/PigChest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="25" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
+        <state line="28" column="21" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Listeners/HellhoundListener.java">
+    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Tools.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1928" selection-end="1928" vertical-scroll-proportion="1.5726873">
+        <state line="19" column="0" selection-start="540" selection-end="586" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Listeners/LichListener.java">
+    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Commands/CMDSpawn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="11" selection-start="2706" selection-end="2706" vertical-scroll-proportion="0.0">
+        <state line="53" column="124" selection-start="2371" selection-end="2371" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Listeners/PossessedItemListener.java">
+    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/MoreMobsCore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="46" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.8237885">
+        <state line="68" column="125" selection-start="2631" selection-end="2631" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Listeners/PigChestListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="17" selection-start="1201" selection-end="1270" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Listeners/WraithListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="22" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/moremobs/Listeners/FoodFightListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="74" selection-start="358" selection-end="358" vertical-scroll-proportion="0.4493392">
+        <state line="87" column="117" selection-start="3165" selection-end="3165" vertical-scroll-proportion="0.4465291">
           <folding />
         </state>
       </provider>
