@@ -7,12 +7,15 @@ import org.bukkit.inventory.ItemStack;
 
 public class PigChest {
 
+    @SuppressWarnings("deprecation")
     public static boolean isPigChest (Entity entity) {
         if (entity instanceof Pig) {
             Pig pigc = (Pig) entity;
-            ItemStack pigcChest = new ItemStack(Material.LEATHER_CHESTPLATE, 1, (short) - 98789);
-            if (pigc.getEquipment().getChestplate().equals(pigcChest)) {
-                return true;
+            if (pigc.getPassenger() instanceof StorageMinecart) {
+                ItemStack pigcChest = new ItemStack(Material.LEATHER_CHESTPLATE, 1, (short) - 98789);
+                if (pigc.getEquipment().getChestplate().equals(pigcChest)) {
+                    return true;
+                }
             }
         }
         return false;
@@ -24,8 +27,7 @@ public class PigChest {
         while (i < amount) {
             LivingEntity pig = (LivingEntity) loc.getWorld().spawnEntity(loc, EntityType.PIG);
             pig.getEquipment().setChestplate(new ItemStack(Material.LEATHER_CHESTPLATE, 1));
-            Entity minecart = (Entity) loc.getWorld().spawn(loc,
-                    StorageMinecart.class);
+            Entity minecart = (Entity) loc.getWorld().spawn(loc, StorageMinecart.class);
             pig.setPassenger(minecart);
             i++;
         }

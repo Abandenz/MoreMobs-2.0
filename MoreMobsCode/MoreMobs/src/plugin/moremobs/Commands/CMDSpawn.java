@@ -14,6 +14,7 @@ public class CMDSpawn {
 
     public static MoreMobsCore plugin;
     public FoodFight MMFoodFight;
+    public ChargedCreeper MMChargedCreeper;
     public Hellhound MMHellhound;
     public HellSkeleton MMHellSkeleton;
     public SkeletonWarriorDiamond MMSkeletonWarriorDiamond;
@@ -52,6 +53,14 @@ public class CMDSpawn {
                         if (player.hasPermission("MoreMobs.Spawn.skelewarriordiamond")) {
                             MMSkeletonWarriorDiamond.spawnSkeletonWarriorDiamond(spawnLoc, amount);
                             player.sendMessage(ChatColor.GOLD + "[More Mobs]" + ChatColor.GREEN + " Skeleton Warrior Diamond(" + amount + ") spawned!");
+                            player.getWorld().playSound(player.getLocation(), Sound.WITHER_SPAWN, 1.0F, 1.0F);
+                        } else {
+                            tools.NoPerms(player);
+                        }
+                    } else if (args[1].equalsIgnoreCase("chargedcreeper")) {
+                        if (player.hasPermission("MoreMobs.Spawn.skelewarriordiamond")) {
+                            MMChargedCreeper.spawnChargedCreeper(spawnLoc, amount);
+                            player.sendMessage(ChatColor.GOLD + "[More Mobs]" + ChatColor.GREEN + " Charged Creeper(" + amount + ") spawned!");
                             player.getWorld().playSound(player.getLocation(), Sound.WITHER_SPAWN, 1.0F, 1.0F);
                         } else {
                             tools.NoPerms(player);

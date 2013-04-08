@@ -16,6 +16,7 @@ public class MoreMobsCore extends JavaPlugin {
     public static final Logger log = Logger.getLogger("Minecraft");
     public static MoreMobsCore plugin;
     public Hellhound MMHellhound;
+    public ChargedCreeper MMChargedCreeper;
     public HellSkeleton MMHellSkeleton;
     public FoodFight MMFoodFight;
     public PigChest MMPigChest;
@@ -23,6 +24,7 @@ public class MoreMobsCore extends JavaPlugin {
     public PossessedItem MMPossessedItem;
     public Wraith MMWraith;
     public ZombieGiant MMGiant;
+    private final ChargedCreeperListener chargedcreeper;
     private final FoodFightListener foodfight;
     private final HellSkeletonListener hellskele;
     private final PigChestListener pigchest;
@@ -34,6 +36,7 @@ public class MoreMobsCore extends JavaPlugin {
     public static Integer maxSpawnLimit = Integer.valueOf(10);
 
     public MoreMobsCore () {
+        this.chargedcreeper = new ChargedCreeperListener(this);
         this.foodfight = new FoodFightListener(this);
         this.hellskele = new HellSkeletonListener(this);
         this.pigchest = new PigChestListener(this);
@@ -48,6 +51,7 @@ public class MoreMobsCore extends JavaPlugin {
         loadConfig();
         PluginManager manager = getServer().getPluginManager();
         manager.registerEvents(this.foodfight, this);
+        manager.registerEvents(this.chargedcreeper, this);
         manager.registerEvents(this.hellskele, this);
         manager.registerEvents(this.pigchest, this);
         manager.registerEvents(this.hellhound, this);

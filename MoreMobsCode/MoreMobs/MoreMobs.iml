@@ -8,7 +8,18 @@
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="jdk" jdkName="1.7" jdkType="JavaSDK" />
-    <orderEntry type="library" name="craftbukkit-1.5-R0.1-20130316.233353-19" level="project" />
+    <orderEntry type="library" name="BKCommonLib-1.51-SNAPSHOT" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../craftbukkit-1.5.1-R0.2-20130406.060241-8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../../craftbukkit-1.5.1-R0.2-20130406.060241-8.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
 

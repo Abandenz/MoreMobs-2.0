@@ -4,7 +4,7 @@ import org.bukkit.Color;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.entity.EntityType;
-import org.bukkit.entity.Zombie;
+import org.bukkit.entity.Skeleton;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.LeatherArmorMeta;
 import org.bukkit.potion.PotionEffect;
@@ -13,8 +13,8 @@ import org.bukkit.potion.PotionEffectType;
 public class FoodFight {
 
     public static boolean isFoodFight (FoodFight MMFoodFight) {
-        if (MMFoodFight instanceof Zombie) {
-            Zombie FoodFight = (Zombie) MMFoodFight;
+        if (MMFoodFight instanceof Skeleton) {
+            Skeleton FoodFight = (Skeleton) MMFoodFight;
             if (FoodFight.getEquipment().getChestplate()
                     .equals(new ItemStack(299, 1, (short) - 98789))) {
                 return true;
@@ -26,8 +26,8 @@ public class FoodFight {
     public static void spawnFoodFight (Location loc, int amount) {
         int i = 0;
         while (i < amount) {
-            Zombie FoodFight = (Zombie) loc.getWorld().spawnEntity(loc,
-                    EntityType.ZOMBIE);
+            Skeleton FoodFight = (Skeleton) loc.getWorld().spawnEntity(loc,
+                    EntityType.SKELETON);
             LeatherArmorMeta meta;
             LeatherArmorMeta legMeta;
             ItemStack FFLeg = new ItemStack(Material.LEATHER_LEGGINGS, 1);
@@ -67,7 +67,6 @@ public class FoodFight {
             FoodFight.addPotionEffect(new PotionEffect(
                     PotionEffectType.WATER_BREATHING, 2147483647, 1));
             FoodFight.setCanPickupItems(false);
-            FoodFight.setBaby(true);
             i++;
         }
     }
